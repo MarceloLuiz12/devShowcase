@@ -56,4 +56,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(project(":uikit"))
+    implementation(project(":di"))
+    implementation(project(":data"))
+    implementation(project(":feature_showcase"))
 }

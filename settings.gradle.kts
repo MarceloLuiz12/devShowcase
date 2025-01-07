@@ -21,3 +21,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "devShowcase"
 include(":app")
+include(":uikit")
+include(":data")
+include(":data_local")
+include(":data_remote")
+include(":di")
+include(":domain")
+include(":feature_showcase")
