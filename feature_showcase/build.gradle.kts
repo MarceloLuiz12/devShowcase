@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.feature_show_case"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
