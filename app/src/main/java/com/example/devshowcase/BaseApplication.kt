@@ -1,6 +1,7 @@
 package com.example.devshowcase
 
 import android.app.Application
+import com.example.di.modules.domainModule
 import com.example.di.modules.navigationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -14,6 +15,7 @@ class BaseApplication: Application() {
             modules(
                 listOf(
                     navigationModule,
+                    domainModule
                 )
             )
             androidContext(applicationContext)
