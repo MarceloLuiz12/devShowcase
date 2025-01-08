@@ -12,6 +12,7 @@ appcompat = "1.7.0"
 material = "1.12.0"
 navigation = "2.8.5"
 serialization = "1.7.3"
+koinVersion = "3.5.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,10 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "navigation"}
 kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
+koinCore = {group = "io.insert-koin", name = "koin-core", version.ref = "koinVersion"}
+koinAndroid = {group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion"}
+koinCompose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinVersion"}
+koinTest = {group = "io.insert-koin", name = "koin-test", version.ref = "koinVersion"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -39,4 +44,7 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
+
+[bundles]
+koinDependences = ["koinCore", "koinAndroid", "koinCompose", "koinTest"]
 

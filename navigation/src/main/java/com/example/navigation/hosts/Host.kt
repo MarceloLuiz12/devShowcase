@@ -18,9 +18,7 @@ fun Host(
         startDestination = Routes.TestNavigationOne
     ) {
         composable<Routes.TestNavigationOne> {
-            TestNavigationOne{
-                navHostController.navigate(Routes.TestNavigationTwo("Marcelo"))
-            }
+            TestNavigationOne()
         }
         composable<Routes.TestNavigationTwo> { backStackEntry ->
             val test: Routes.TestNavigationTwo = backStackEntry.toRoute()

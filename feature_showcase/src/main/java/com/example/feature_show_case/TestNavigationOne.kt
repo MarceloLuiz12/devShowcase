@@ -8,11 +8,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.example.feature_show_case.navigation.ShowCaseNavigation
+import org.koin.compose.koinInject
 
 @Composable
 fun TestNavigationOne(
-    onClick: () -> Unit
+
 ) {
+    val navigation: ShowCaseNavigation = koinInject()
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -20,7 +23,9 @@ fun TestNavigationOne(
     ) {
         Text(text = "TestNavigationOne")
         Button(
-            onClick = onClick
+            onClick = {
+                navigation.goToNavigateTwo()
+            }
         ) {
             Text(text = "Navigate")
         }

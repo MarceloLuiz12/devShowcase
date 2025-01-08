@@ -37,6 +37,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    //dependency injection
+    implementation(libs.bundles.koinDependences)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -47,4 +51,5 @@ dependencies {
     implementation(project(path = ":domain"))
     implementation(project(path = ":feature_showcase"))
     implementation(project(path = ":data_remote"))
+    implementation(project(path = ":navigation"))
 }

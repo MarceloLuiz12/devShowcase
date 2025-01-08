@@ -51,6 +51,9 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.compose.navigation)
 
+    //dependency injection
+    implementation(libs.bundles.koinDependences)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
