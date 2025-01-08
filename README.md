@@ -26,10 +26,6 @@ O objetivo principal do DevShowcase é apresentar um conjunto de soluções comp
 - Seguir princípios como Clean Code e SOLID.
 - Utilizar ferramentas modernas para entregar aplicações de alta qualidade.
 
-## Contribuição
-
-Embora este seja um projeto pessoal, colaborações são bem-vindas! Se você deseja contribuir, por favor, envie um pull request ou abra uma issue com suas sugestões.
-
 ## Contato
 
 Se você tiver dúvidas ou quiser saber mais sobre o projeto, fique à vontade para entrar em contato pelo meu [LinkedIn](https://www.linkedin.com/in/marceloluizpinheiro/) ou através do meu e-mail: marceloluizpinheiro17@gmail.com
