@@ -12,4 +12,7 @@ sealed class Routes {
         val name: String
     ) : Routes()
 
+    @Serializable
+    data object GetAddressScreen : Routes()
+
 }

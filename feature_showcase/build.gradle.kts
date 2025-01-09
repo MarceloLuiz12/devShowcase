@@ -50,6 +50,8 @@ dependencies {
     //dependency injection
     implementation(libs.bundles.koinDependences)
 
+    implementation(project(path = ":domain"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

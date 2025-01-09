@@ -13,6 +13,10 @@ material = "1.12.0"
 navigation = "2.8.5"
 serialization = "1.7.3"
 koinVersion = "3.5.0"
+retrofit = "2.9.0"
+loggingInterceptor = "4.12.0"
+kotlinxCoroutinesCore = "1.7.1"
+gson = "2.10.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -37,6 +41,12 @@ koinCore = {group = "io.insert-koin", name = "koin-core", version.ref = "koinVer
 koinAndroid = {group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion"}
 koinCompose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinVersion"}
 koinTest = {group = "io.insert-koin", name = "koin-test", version.ref = "koinVersion"}
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "loggingInterceptor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

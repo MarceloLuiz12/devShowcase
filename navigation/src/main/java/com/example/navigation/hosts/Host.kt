@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import com.example.feature_show_case.TestNavigationOne
 import com.example.feature_show_case.TestNavigationTwo
+import com.example.feature_show_case.via_cep.AddressLookupScreen
 import com.example.navigation.routes.Routes
 
 @Composable
@@ -15,7 +16,7 @@ fun Host(
 ){
     NavHost(
         navController = navHostController,
-        startDestination = Routes.TestNavigationOne
+        startDestination = Routes.GetAddressScreen
     ) {
         composable<Routes.TestNavigationOne> {
             TestNavigationOne()
@@ -25,6 +26,10 @@ fun Host(
             TestNavigationTwo(
                 name = test.name
             )
+        }
+
+        composable<Routes.GetAddressScreen> {
+            AddressLookupScreen()
         }
     }
 }
